@@ -92,7 +92,7 @@ After running `--run-all`:
   (pruned connections) and a smaller cluster near 1 (kept connections).
 - `REPORT.md` — full write-up.
 
-## Design choices worth defending in an interview
+## Design choices
 
 - **Why initialise `gate_scores` at +2.0?** `sigmoid(2.0) ≈ 0.88`. That keeps
   the network close to a normal MLP at step 0, so training starts stably.
