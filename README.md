@@ -9,9 +9,6 @@ post-training step.
 The full write-up with results and the gate-distribution plot is in
 **[REPORT.md](./REPORT.md)**.
 
-If you have **no prior deep-learning background**, start with
-**[WALKTHROUGH.md](./WALKTHROUGH.md)** — a top-to-bottom plain-English
-explanation of the entire project, with a glossary at the end.
 
 ---
 
