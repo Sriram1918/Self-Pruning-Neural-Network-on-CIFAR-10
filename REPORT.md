@@ -7,31 +7,6 @@
 **Total weights:** ~7.6 million parameters | ~3.8 million learnable gates.
 **Hardware:** Kaggle Tesla T4 GPU (15.6 GB VRAM).
 
----
-
-## 0. Project Overview (For Newcomers)
-
-> **What is this project?**
-> We built a neural network (an AI model) that can look at tiny images and
-> classify them into 10 categories (airplane, car, bird, cat, etc.). But the
-> twist is: instead of just learning to classify images, the network also
-> **learns which of its own connections are useless — and turns them off
-> automatically during training**. This is called "self-pruning."
-
-> **Why does this matter?**
-> Neural networks have millions of connections. Most of them end up barely
-> contributing anything. Removing those useless connections makes the model
-> smaller, faster, and sometimes even more accurate. Normally, pruning is done
-> *after* training as a separate step. This project does it *during* training —
-> the network decides for itself what to prune.
-
-> **The key mechanism:**
-> Every weight (connection number) is paired with a learnable "gate" — a value
-> between 0 and 1. If gate ≈ 0, the connection is effectively turned off
-> (pruned). The network is penalized for keeping too many gates open, so it
-> learns to close the ones that aren't helping.
-
----
 
 ## 1. Why an L1 penalty on the sigmoid gates encourages sparsity
 
