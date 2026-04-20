@@ -7,6 +7,7 @@
 **Total weights:** ~7.6 million parameters | ~3.8 million learnable gates.
 **Hardware:** Kaggle Tesla T4 GPU (15.6 GB VRAM).
 
+---
 
 ## 1. Why an L1 penalty on the sigmoid gates encourages sparsity
 
@@ -139,8 +140,6 @@ acts as a beneficial regulariser for this architecture.
 
 ---
 
-
----
 
 ## 5. How to reproduce
 
