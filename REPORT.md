@@ -139,40 +139,10 @@ acts as a beneficial regulariser for this architecture.
 
 ---
 
-## 5. Repository Structure
-
-```
-Self-Pruning-Neural-Network-on-CIFAR-10/
-│
-├── self_pruning.py          ← THE MAIN CODE (the actual algorithm)
-│                              Run this to train the model
-│
-├── requirements.txt         ← Python packages to install before running
-│
-├── kaggle_notebook.ipynb    ← Notebook version — easy to run on Kaggle GPU
-│                              Just upload to Kaggle and click "Run All"
-│
-├── results.ipynb            ← The ACTUAL COMPLETED RUN on Kaggle T4 GPU
-│                              Contains full training logs + plots + results
-│
-├── REPORT.md                ← This file — analysis and explanation of results
-│
-├── WALKTHROUGH.md           ← Plain-English explanation of everything
-│                              (no technical background needed)
-│
-├── README.md                ← Quick start instructions
-│
-├── gate_distribution.png    ← Plot: histogram of all gate values after training
-│
-├── accuracy_vs_sparsity.png ← Plot: how accuracy changes with sparsity
-│
-└── Intern Python AI Engineer- JD+Case Study - tredence.pdf
-                             ← The original case study from Tredence Analytics
-```
 
 ---
 
-## 6. How to reproduce
+## 5. How to reproduce
 
 **Option A — Run the Python script directly:**
 ```bash
@@ -193,7 +163,7 @@ python self_pruning.py --lam 1e-6 --epochs 1 --subset 1024
 
 ---
 
-## 7. Key design decisions (for interview / review)
+## 6. Key design decisions
 
 | Decision | Reason |
 |----------|--------|
