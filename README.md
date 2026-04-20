@@ -49,17 +49,7 @@ it's training, which connections to keep**.
    considered "pruned". The percentage of pruned gates is the **sparsity
    level**.
 
-## Repo layout
 
-```
-self-pruning-nn/
-├── self_pruning.py     # the single, well-commented script the brief asks for
-├── requirements.txt    # torch, torchvision, matplotlib, numpy
-├── README.md           # this file
-├── REPORT.md           # explanation + results table + plot (the deliverable)
-└── outputs/            # written by the script
-    ├── results.json
-    └── gate_distribution.png
 ```
 
 ## How to run
