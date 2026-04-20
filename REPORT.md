@@ -156,7 +156,7 @@ python self_pruning.py --lam 1e-6 --epochs 1 --subset 1024
 
 **Option B — Run on Kaggle (recommended, free GPU):**
 1. Go to [kaggle.com/code](https://kaggle.com/code) → "New Notebook"
-2. Upload `kaggle_notebook.ipynb`
+2. Upload `Self_Pruning_Neural_Network01.ipynb.ipynb`
 3. Enable GPU: Settings → Accelerator → GPU T4 x2
 4. Click "Run All" — takes ~35 minutes, produces plots and results automatically
 
